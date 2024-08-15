@@ -1,0 +1,513 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fffffe;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin: 0 10rem; */
+    background-color: #004643;
+    padding: 0 4rem;
+    position: fixed;
+    width: 100%;
+    height: 12%;
+    z-index: 1000;
+}
+
+label {
+    display: none;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: "kanit";
+    color: #f9bc60;
+    font-weight: 500;
+}
+
+
+.img-logo {
+    width: 5rem;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar_list {
+    display: flex;
+    gap: 3rem;
+}
+
+nav, i {
+    font-size: 20px;
+    color: #f9bc60;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+}
+
+input {
+    display: none;
+    
+}
+
+.span_menu {
+ height: 1.5px;
+    width: 30px;
+    background-color: #f9bc60;
+    display: flex;
+    flex-direction: column;
+    margin: 3.0px 0;
+    color: #f9bc60;
+    display: none;
+}
+
+#menu_toggle {
+    display: none;
+}
+
+.box_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.span_info {
+    color: #004643;
+}
+
+.box-products {
+    display: flex;
+    gap: 70px;
+    color: #004643;
+    font-family: "kanit";
+    font-size: 1rem;
+}
+
+.section_products {
+    width: 100%;
+    height: 70vh;
+}
+
+.containers_img {
+    display: flex;
+    justify-content: center;
+}
+
+#carrusel-img {
+    width: 100%;
+    /* height: 72vh; */
+}
+
+
+
+.back {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+
+.boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tamaño-especial {
+    width: 150%; /* o cualquier tamaño especial que necesites */
+    height: auto;
+}
+
+.info_buy_send {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.info_buy_send img {
+    width: 110px;
+}
+
+.box_text_send {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "kanit";
+    font-weight: 500;
+}
+
+
+
+.text_description {
+    width: 50%;
+}
+
+
+.img_gift {
+    animation: move 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 9s;
+}
+
+main {
+    width: 100%;
+    height: 250vh;
+}
+
+.box_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+     margin: 60px;
+     gap: 50px;
+}
+
+.cards {
+    width: 380px;
+    height: 25rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+   align-items: center;
+}
+
+.cards img {
+    width: 200px;
+
+}
+
+.cards h2 {
+    font-size: 17px;
+    font-family: "kanit";
+    /* margin: 0;
+    padding: 0; */
+}
+
+.cards p {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10px
+}
+
+.cards button {
+    width: 10rem;
+    height: 2rem;
+    font-family: "kanit";
+    border: none;
+    background-color: #004643;
+    color: #f9bc60;
+    border-radius: 0.3rem;
+}
+
+.pizza {
+    height: 190px;
+}
+
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #004643;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.box_redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* width: 50%; */
+}
+
+footer img {
+    width: 40px;
+    border-radius: 100%;
+
+}
+
+
+.fondo {
+    background-color: #004643;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f9bc60;
+    height: 100%;
+}
+
+
+.box_ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+a {
+    font-family: "kanit";
+    color: #f9bc60;
+    text-decoration: none;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    cursor: pointer;
+    z-index: 1; /* Asegúrate de que el ícono esté sobre el input */
+}
+
+.search-input {
+    position: absolute;
+    left: 1060px;
+    display: none;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 8px;
+    height: 2rem;
+    /* padding: 8px; */
+    z-index: 0; /* El input estará debajo del ícono */
+
+}
+
+.search-input.active {
+    display: inline-block;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+/*  */
+
+.search-results {
+    position: absolute;
+    top: 100%; /* Justo debajo del input */
+    left: 1020px;
+    right: 0;
+    width: 25%!important; /* Ajusta al ancho del input */
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 200px; /* Ajusta la altura según sea necesario */
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-sizing: border-box; /* Incluye el borde y el padding en el ancho total */
+    border-radius: 10px;
+}
+
+.search-results .result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+    cursor: pointer;
+}
+
+.search-results .result-item img {
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 10px;
+}
+
+.search-results .result-item:hover {
+    background: #f0f0f0;
+}
+
+
+
+.cards {
+    background-color: #fff; /* Color de fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.9); /* Sombreado */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    overflow: hidden; /* Oculta el contenido que se sale de los bordes */
+}
+
+.cards:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombreado más intenso en hover */
+    transform: translateY(-5px); /* Eleva la card al hacer hover */
+}
+
+
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+i {
+    cursor: pointer;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 150px;
+    background-color: #004643;
+    color: #f9bc60;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    /* Posiciona el texto */
+    position: absolute;
+    z-index: 1;
+    top: 0px; /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: none;
+    /* Transición para un efecto suave */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.bars-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bars-menu span {
+    height: 1.5px;
+    width: 30px;
+    background: #f9bc60;
+    display: none;
+}
+
+nav ul {
+    align-items: center;
+}
+
+
+@media (max-width: 1300px) {
+
+    .bars-menu span {
+        display: flex;
+    }
+
+   .navbar ul {
+    background-color: #004643;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 64px;
+    left: 400px;
+    flex-direction: column;
+    align-items:baseline; 
+    /* justify-content: center; */
+    transform: translateX(200%);
+    transition: all 0.4s ease;
+   }
+
+   #toggle-menu:checked ~ .navbar_list {
+    transform: translateX(0);
+   }
+   
+   header {
+    justify-content: space-evenly;
+    padding: 0;
+   }
+    
+
+    .boton {
+        top: 30%;
+    }
+
+    /* .navbar_list {
+        display: none;
+    } */
+
+    .section_products {
+        height: 48vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boton {
+        display: none;
+    }
+
+    .info_buy_send {
+        gap: 10px;
+
+    }
+
+    .cards {
+        text-align: center;
+    }
+
+
+    .box_text_send {
+        justify-content: center;
+    }
+
+    .main_card {
+        height: 790vh;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+     .tooltip-text {
+        left: -100px;
+     }
+
+     .search-input {
+        left: -140px;
+     }
+
+    .span_info {
+        display: none;
+    }
+
+    .cards {
+        height: 26.7rem;
+    }
+
+}
