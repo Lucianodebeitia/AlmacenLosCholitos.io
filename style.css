@@ -441,6 +441,7 @@ nav ul {
     /* justify-content: center; */
     transform: translateX(200%);
     transition: all 0.4s ease;
+    justify-content: baseline;
    }
 
    #toggle-menu:checked ~ .navbar_list {
